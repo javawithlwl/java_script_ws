@@ -32,10 +32,53 @@
       </nav>
       <div class="container mt-2">
         <div class="row">
-            <div class="col-8 offset-2">
-                <img src="img/under-construction.jpg" class="img-fluid">
-           </div>
+          <div class="row">
+            <div class="col">
+                <p><strong>JavaScript Functions</strong></p>
+                <div class="input-group mb-3">
+                  <select class="form-select" id="idYear"></select>
+                  &nbsp;
+                  <select class="form-select" id="idMonth"></select>
+                  </select>
+                </div>
+                <div id="idShowDaysInfo"></div>
+            </div>
+            <div class="col">
+              <p>JavaScript Operators</p>
+              <div class="mb-2">
+                <label for="idNum1">Number 1</label>
+                <input type="number" class="form-control" id="idNum1" placeholder="Enter Number 1">
+              </div>
+              <div class="mb-2">
+                <label for="idNum2">Number 2</label>
+                <input type="number" class="form-control" id="idNum2" placeholder="Enter Number 2">
+            </div>
+            <div class="mb-2">
+              <button  class="btn btn-primary" id="idAdd">Add</button>
+              <button  class="btn btn-primary" id="idSub">Sub</button>
+              <button  class="btn btn-primary" id="idMul">Mul</button>
+              <button  class="btn btn-primary" id="idDiv">Div</button>
+              <button  class="btn btn-primary" id="idMod">Mod</button>
+            </div>
+            <div class="mb-2">
+              <label for="idResult">Result</label>
+              <input type="text" class="form-control" id="idResult" placeholder="Result" readonly>
+          </div>
+          </div>
+            <div class="col">
+              <p class="text-center"><strong>Todo Application</strong></p>
+              <div class="mb-2">
+                  <input type="text" id="idTodo" class="form-control" placeholder="Enter the todo details">
+              </div>
+              <div class="mb-2">
+                  <div id="idShowTodos"></div>
+              </div>
+            </div>
+     </div>
        </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+        <script src="js/functions.js"></script>
+        <script src="js/operators.js"></script>
+        <script src="js/todos.js"></script>
 </body>
 </html>
